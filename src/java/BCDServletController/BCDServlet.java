@@ -8,13 +8,9 @@ import BCDServletModel.EnumMode;
 import BCDServletModel.CookieManipulation;
 import BCDServletView.View;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.GregorianCalendar;
-import javax.servlet.RequestDispatcher;
  
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -24,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author Maciej Kajstura 
  * @version 1.4.1
  **/
-//@WebServlet(name = "Controller", urlPatterns = "/calculateServlet")
+//@WebServlet(name = "BCDServlet", urlPatterns = "/BCDServlet")
 public class BCDServlet extends HttpServlet {
     /** Object of model type used to calculate equations.**/
     private final Calc model = new Calc();
