@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+    <session-config>
+        <session-timeout>
+            60
+        </session-timeout>
+    </session-config>
+    <servlet>
+        <servlet-name>BCDServlet</servlet-name>
+        <servlet-class>BCDServletController.BCDServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BCDServlet</servlet-name>
+        <url-pattern>/BCDServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BCDServletData</servlet-name>
+        <servlet-class>BCDServletController.BCDServletData</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BCDServletData</servlet-name>
+        <url-pattern>/BCDServletData</url-pattern>
+    </servlet-mapping>
+</web-app>

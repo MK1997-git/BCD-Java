@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>BCDCalc</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form name="BCDServlet" action="BCDServlet" method="POST">
+            <table>
+                <tr>
+                    <td>Username :</td>
+                    <td><input type="text" name="userName"/></td>
+                </tr>
+                <tr>
+                    <td>First Number :</td>
+                    <td><input type="text" name="firstNum"/></td>
+                </tr>
+                <tr>
+                    <td>Second Number :</td>
+                    <td><input type="text" name="secondNum"/></td>
+                </tr>
+            </table>
+             <select name = "Mode">
+                <option value="0">Addition</option>
+                <option value="1">Subtraction</option>
+                <option value="2">Multiplication</option>
+            </select> 
+            <input type="submit" value="Submit" name="find"/>
+            <input type="reset" value="Reset" name="reset" />
+        </form>
+    </body>
+</html>
